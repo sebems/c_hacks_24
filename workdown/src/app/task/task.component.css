@@ -1,0 +1,45 @@
+.task-container {
+    --font-fam: Arial;
+    --task-header: #000;
+    --task-body: #fff;
+    --task-summary: #000;
+
+    align-items: center;
+    background-color: var(--task-body);
+    border-style: solid;
+    border-radius: 10px;
+    display: grid;
+    font-family: var(--font-fam);
+    grid-template-columns: auto 10vw;
+    margin: auto;
+    padding: 30px;
+    width: 50%;
+}
+
+/* .task-container:hover {
+    background-color: white;
+} */
+
+.left {
+    margin: auto;
+}
+
+.right {
+    margin: auto;
+}
+
+.task-title {
+    color: var(--task-header);
+}
+
+.task-summary {
+    color: var(--task-summary);
+}
+
+.task-due {
+    color: var(--task-header);
+}
+
+.task-check {
+
+}
