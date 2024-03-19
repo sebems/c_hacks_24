@@ -1,20 +1,17 @@
-<div class="task-container">
+<mat-card class="task-container">
     <div class="left">
-        <div class="task-title">
-            <h3>{{title}}</h3>
-        </div>
-        <div class="task-summary">
-            <p>{{summary}}</p>
-        </div>
+
+        <mat-card-title class="task-title">{{title}}</mat-card-title>
+        <mat-card-subtitle class="task-summary">{{summary}}</mat-card-subtitle>
+
     </div>
 
     <div class="right">
-        <div class="task-due">
-            <p>{{timeRemaining}}</p>
-        </div>
-        <div class="task-check">
-            <input type="radio" [checked]="isTaskComplete">
-        </div>
+        <mat-card-actions>
+                <mat-checkbox class="task-check" [checked]="isTaskComplete"></mat-checkbox>
+        </mat-card-actions>
+        <p class="task-due">{{timeRemaining}}</p>
+
     </div>
 
-</div>
+</mat-card>
